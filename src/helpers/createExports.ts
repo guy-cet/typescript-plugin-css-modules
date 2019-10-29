@@ -7,7 +7,7 @@ const NOT_CAMELCASE_REGEXP = /[\-_]/;
 
 const classNameToProperty = (className: string) => `'${className}': string;`;
 const classNameToNamedExport = (className: string) =>
-  `export const ${className}: string;`;
+  `export const ${className}: string = null;`;
 
 const flattenClassNames = (
   previousValue: string[] = [],
